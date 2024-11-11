@@ -82,23 +82,38 @@ var lyr_Parcelsparcels_5 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Parcelsparcels_5.png" /> Parcels — parcels'
             });
-var format_TopLeadBranyanParcels_6 = new ol.format.GeoJSON();
-var features_TopLeadBranyanParcels_6 = format_TopLeadBranyanParcels_6.readFeatures(json_TopLeadBranyanParcels_6, 
+var format_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6 = new ol.format.GeoJSON();
+var features_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6 = format_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.readFeatures(json_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_TopLeadBranyanParcels_6 = new ol.source.Vector({
+var jsonSource_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_TopLeadBranyanParcels_6.addFeatures(features_TopLeadBranyanParcels_6);
-var lyr_TopLeadBranyanParcels_6 = new ol.layer.Vector({
+jsonSource_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.addFeatures(features_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6);
+var lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_TopLeadBranyanParcels_6, 
-                style: style_TopLeadBranyanParcels_6,
+                source:jsonSource_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6, 
+                style: style_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6,
+                popuplayertitle: "Top Branyan Parcels — parcels_lotplan_dissolved_with_address",
+                interactive: true,
+                title: '<img src="styles/legend/TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.png" /> Top Branyan Parcels — parcels_lotplan_dissolved_with_address'
+            });
+var format_TopLeadBranyanParcels_7 = new ol.format.GeoJSON();
+var features_TopLeadBranyanParcels_7 = format_TopLeadBranyanParcels_7.readFeatures(json_TopLeadBranyanParcels_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_TopLeadBranyanParcels_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_TopLeadBranyanParcels_7.addFeatures(features_TopLeadBranyanParcels_7);
+var lyr_TopLeadBranyanParcels_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_TopLeadBranyanParcels_7, 
+                style: style_TopLeadBranyanParcels_7,
                 popuplayertitle: "Top Lead Branyan Parcels",
                 interactive: true,
-                title: '<img src="styles/legend/TopLeadBranyanParcels_6.png" /> Top Lead Branyan Parcels'
+                title: '<img src="styles/legend/TopLeadBranyanParcels_7.png" /> Top Lead Branyan Parcels'
             });
 var group_Administrative = new ol.layer.Group({
-                                layers: [lyr_Localitieslocalities_4,lyr_Parcelsparcels_5,lyr_TopLeadBranyanParcels_6,],
+                                layers: [lyr_Localitieslocalities_4,lyr_Parcelsparcels_5,lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6,lyr_TopLeadBranyanParcels_7,],
                                 fold: "open",
                                 title: "Administrative"});
 var group_Encumbrances = new ol.layer.Group({
@@ -114,20 +129,23 @@ var group_BaseLayer = new ol.layer.Group({
                                 fold: "open",
                                 title: "Base Layer"});
 
-lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_BranyanLocalAreaPlan_2.setVisible(true);lyr_Encumbrances_3.setVisible(true);lyr_Localitieslocalities_4.setVisible(true);lyr_Parcelsparcels_5.setVisible(true);lyr_TopLeadBranyanParcels_6.setVisible(true);
+lyr_GoogleMaps_0.setVisible(false);lyr_ESRISatelliteArcGISWorld_Imagery_1.setVisible(true);lyr_BranyanLocalAreaPlan_2.setVisible(true);lyr_Encumbrances_3.setVisible(true);lyr_Localitieslocalities_4.setVisible(true);lyr_Parcelsparcels_5.setVisible(true);lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.setVisible(true);lyr_TopLeadBranyanParcels_7.setVisible(true);
 var layersList = [group_BaseLayer,group_LocalAreaPlan,group_Encumbrances,group_Administrative];
 lyr_Encumbrances_3.set('fieldAliases', {'id': 'id', });
 lyr_Localitieslocalities_4.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'Locality': 'Locality', 'Post_Code': 'Post_Code', 'Shape_Length': 'Shape_Length', 'Shape_Area': 'Shape_Area', });
 lyr_Parcelsparcels_5.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'plan_lot': 'PLAN_LOT', 'derm_landuse': 'DERM_LANDUSE', 'house_no': 'HOUSE_NO', 'street_name': 'STREET_NAME', 'street_type': 'STREET_TYPE', 'road_name': 'ROAD_NAME', 'locality': 'LOCALITY', 'address': 'ADDRESS', 'legal_area': 'LEGAL_AREA', 'full_address': 'FULL_ADDRESS', 'Shape_Length': 'Shape_Length', 'Shape_Area': 'Shape_Area', });
-lyr_TopLeadBranyanParcels_6.set('fieldAliases', {'fid': 'fid', 'Address': 'Address', 'Lotplan': 'Lotplan', 'Suburb': 'Suburb', 'Gross Ha': 'Gross Ha', 'NDH': 'NDH', });
+lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.set('fieldAliases', {'fid': 'fid', 'LOTPLAN': 'LOTPLAN', 'area_ha': 'area_ha', 'locality': 'locality', 'local_auth': 'local_auth', 'address': 'address', 'NDH': 'NDH', 'Lead Link': 'Lead Link', });
+lyr_TopLeadBranyanParcels_7.set('fieldAliases', {'fid': 'fid', 'Address': 'Address', 'Lotplan': 'Lotplan', 'Suburb': 'Suburb', 'Gross Ha': 'Gross Ha', 'NDH': 'NDH', });
 lyr_Encumbrances_3.set('fieldImages', {'id': '', });
 lyr_Localitieslocalities_4.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'Locality': 'TextEdit', 'Post_Code': 'Range', 'Shape_Length': 'TextEdit', 'Shape_Area': 'TextEdit', });
 lyr_Parcelsparcels_5.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'plan_lot': 'TextEdit', 'derm_landuse': 'TextEdit', 'house_no': 'TextEdit', 'street_name': 'TextEdit', 'street_type': 'TextEdit', 'road_name': 'TextEdit', 'locality': 'TextEdit', 'address': 'TextEdit', 'legal_area': 'TextEdit', 'full_address': 'TextEdit', 'Shape_Length': 'TextEdit', 'Shape_Area': 'TextEdit', });
-lyr_TopLeadBranyanParcels_6.set('fieldImages', {'fid': '', 'Address': '', 'Lotplan': '', 'Suburb': '', 'Gross Ha': '', 'NDH': '', });
+lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.set('fieldImages', {'fid': 'TextEdit', 'LOTPLAN': 'TextEdit', 'area_ha': 'TextEdit', 'locality': 'TextEdit', 'local_auth': 'TextEdit', 'address': 'TextEdit', 'NDH': 'TextEdit', 'Lead Link': '', });
+lyr_TopLeadBranyanParcels_7.set('fieldImages', {'fid': '', 'Address': '', 'Lotplan': '', 'Suburb': '', 'Gross Ha': '', 'NDH': '', });
 lyr_Encumbrances_3.set('fieldLabels', {'id': 'no label', });
 lyr_Localitieslocalities_4.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'Locality': 'no label', 'Post_Code': 'no label', 'Shape_Length': 'no label', 'Shape_Area': 'no label', });
 lyr_Parcelsparcels_5.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'plan_lot': 'hidden field', 'derm_landuse': 'hidden field', 'house_no': 'hidden field', 'street_name': 'hidden field', 'street_type': 'hidden field', 'road_name': 'hidden field', 'locality': 'hidden field', 'address': 'inline label - always visible', 'legal_area': 'hidden field', 'full_address': 'hidden field', 'Shape_Length': 'hidden field', 'Shape_Area': 'hidden field', });
-lyr_TopLeadBranyanParcels_6.set('fieldLabels', {'fid': 'hidden field', 'Address': 'inline label - always visible', 'Lotplan': 'inline label - always visible', 'Suburb': 'inline label - always visible', 'Gross Ha': 'inline label - always visible', 'NDH': 'inline label - always visible', });
-lyr_TopLeadBranyanParcels_6.on('precompose', function(evt) {
+lyr_TopBranyanParcelsparcels_lotplan_dissolved_with_address_6.set('fieldLabels', {'fid': 'no label', 'LOTPLAN': 'no label', 'area_ha': 'no label', 'locality': 'no label', 'local_auth': 'no label', 'address': 'no label', 'NDH': 'no label', 'Lead Link': 'no label', });
+lyr_TopLeadBranyanParcels_7.set('fieldLabels', {'fid': 'hidden field', 'Address': 'inline label - always visible', 'Lotplan': 'inline label - always visible', 'Suburb': 'inline label - always visible', 'Gross Ha': 'inline label - always visible', 'NDH': 'inline label - always visible', });
+lyr_TopLeadBranyanParcels_7.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
